@@ -17,10 +17,10 @@ public class JavaLibs {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //At least one input parsed as a String --- done
+        //At least one input parsed as a String 
         //At least one input parsed as an int
         //At least one input parsed as a double
-        //Used at least one imput in a question to the user --- done
+        //Used at least one imput in a question to the user 
         //Math with at least one int
         //Math with at least one double
         //At least 10 imputs
@@ -31,8 +31,8 @@ public class JavaLibs {
         String firstName;
         
         int ageNumber;
-        int intNumber2;
-        int intNumber3;
+        int yearsAgo;
+        int total;
         
         double doubleNumber1;
         double doubleNumber2;
@@ -40,14 +40,18 @@ public class JavaLibs {
         
         Scanner sc = new Scanner(System.in);
         
-        System.out.print("Hello, what is your name? ");
-            firstName = sc.nextLine();
         
-        System.out.print(firstName +", how old are you? ");
-            ageNumber = sc.nextInt();//ask how old they would be after x amount of years
+        System.out.print("Insert your name: ");
+            firstName = sc.next();
             
+        System.out.print("Insert a number: ");
+            ageNumber = sc.nextInt();
         
+        System.out.print("Insert a second number: ");
+            yearsAgo = sc.nextInt();
         
+        total= ageNumber - yearsAgo;
+        System.out.print("");
     }
     
 }
